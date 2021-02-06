@@ -1,0 +1,37 @@
+{
+  "name": "use-roving-tabindex",
+  "description": "Roving tabindex as a tiny (612B) react hook",
+  "version": "0.0.0",
+  "main": "dist/use-roving-tabindex.cjs",
+  "module": "dist/use-roving-tabindex.mjs",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "import": "./dist/use-roving-tabindex.mjs",
+    "require": "./dist/use-roving-tabindex.cjs"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prod": "node scripts/cjs.mjs && node scripts/esm.mjs && gzip -c dist/use-roving-tabindex.mjs | wc -c",
+    "preview": "node scripts/preview.mjs",
+    "watch": "watchman-make -p 'index.js' 'preview.js' --run \"npm run preview\"",
+    "serve": "node server.cjs",
+    "prepare": "npm run prod"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.42",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "polka": "^0.5.2",
+    "prettier": "^2.2.1",
+    "serve-static": "^1.14.1"
+  }
+}
