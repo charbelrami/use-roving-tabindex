@@ -1,7 +1,7 @@
 {
   "name": "use-roving-tabindex",
   "description": "Roving tabindex as a tiny (615B) react hook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/use-roving-tabindex.cjs",
   "module": "dist/use-roving-tabindex.mjs",
   "files": [
