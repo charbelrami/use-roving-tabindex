@@ -1,6 +1,6 @@
 # use-roving-tabindex
 
-> Roving tabindex as a tiny (612B) react hook
+> Roving tabindex as a tiny (615B) react hook
 
 ## Examples
 
