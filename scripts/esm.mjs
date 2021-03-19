@@ -1,9 +1,10 @@
 import esbuild from "esbuild";
+import { srcDir, distDir } from "./config.mjs";
 
 esbuild.buildSync({
-  entryPoints: ["./index.js"],
-  outfile: "./dist/use-roving-tabindex.mjs",
-  platform: "node",
+  entryPoints: [`${srcDir}/index.js`],
+  outfile: `${distDir}/index.mjs`,
+  platform: "browser",
   format: "esm",
   loader: { ".js": "jsx" },
   bundle: true,

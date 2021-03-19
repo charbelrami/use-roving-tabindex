@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
-import { useRovingTabindex } from "./index";
+import { useRovingTabindex } from "../src";
 
 function BasicExample() {
   const [compositeRef] = useRovingTabindex();
